@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"></head>
+<script >
+var res=new Array("");
+function changecolor(btn)
+{
+document.getElementById(btn).style.backgroundColor = "yellow";
+var temp=document.getElementById(btn).value;
+res.push(temp);
+document.getElementById("ref").value=res;
+}
+</script>
+<meta charset="UTF-8">
+<style>
+.but:hover{
+    background: #161d22;
+  color: white;
+}
+.but{
+  border-color: #512542;
+  color: rgb(6, 18, 31);
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  border-radius: 15%;
+}
+.p{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+body{
+    background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+</style>
+<body>
+
+<form method="POST" action="http://localhost:5000/result" method="GET" >
+<div><h2>Welcome
+  {% for key, value in name.items() %}
+     {% if (key=="name")%}
+       {{value}}
+      {% endif %} 
+  {% endfor %}
+</h2>
+
+<center><h2>Select the symptons from the given items</h2></center>
+<input type = "button" class="but" value="ulcers_on_tongue" id = "btn1" onClick="changecolor('btn1')">
+<input type = "button" class="but" value="shivering" id = "btn2" onClick="changecolor('btn2')">
+<input type = "button" class="but" value="sweating" id = "btn3" onClick="changecolor('btn3')">
+<input type = "button" class="but" value="dehydration" id = "btn4" onClick="changecolor('btn4')">
+<input type = "button" class="but" value="headache" id = "btn5" onClick="changecolor('btn5')">
+<input type = "button" class="but" value="indigestion" id = "btn6" onClick="changecolor('btn6')">
+<input type = "button" class="but" value="itching" id = "btn7" onClick="changecolor('btn7')">
+<input type = "button" class="but" value="high_fever" id = "btn8" onClick="changecolor('btn8')">
+<input type = "button" class="but" value="continuous_sneezing" id = "btn9" onClick="changecolor('btn9')">
+<input type = "button" class="but" value="chills" id = "btn10" onClick="changecolor('btn10')">
+<input type = "button" class="but" value="stomach_pain" id = "btn11" onClick="changecolor('btn11')">
+<input type = "button" class="but" value="acidity" id = "btn12" onClick="changecolor('btn12')">
+<input type = "button" class="but" value="muscle_wasting" id = "btn13" onClick="changecolor('btn13')">
+<input type = "button" class="but" value="vomiting" id = "btn14" onClick="changecolor('btn14')">
+<input type = "button" class="but" value="breathlessness" id = "btn15" onClick="changecolor('btn15')">
+<input type = "button" class="but" value="fatigue" id = "btn16" onClick="changecolor('btn16')">
+<input type = "button" class="but" value="weight_gain" id = "btn17" onClick="changecolor('btn17')">
+<input type = "button" class="but" value="anxiety" id = "btn18" onClick="changecolor('btn18')">
+<input type = "button" class="but" value="cold_hands_and_feets" id = "btn19" onClick="changecolor('btn19')">
+<input type = "button" class="but" value="mood_swings" id = "btn20" onClick="changecolor('btn20')">
+<input type = "button" class="but" value="weight_loss" id = "btn21" onClick="changecolor('btn21')">
+<input type = "button" class="but" value="restlessness" id = "btn22" onClick="changecolor('btn22')">
+<input type = "button" class="but" value="lethargy" id = "btn23" onClick="changecolor('btn23')">
+<input type = "button" class="but" value="patches_in_throat" id = "btn24" onClick="changecolor('btn24')">
+<input type = "button" class="but" value="joint_pain" id = "btn25" onClick="changecolor('btn25')">
+<input type = "button" class="but" value="blister" id = "btn26" onClick="changecolor('btn26')">
+<input type = "button" class="but" value="inflammatory_nails" id = "btn27" onClick="changecolor('btn27')">
+<input type = "button" class="but" value="irregular_sugar_level" id = "btn28" onClick="changecolor('btn28')">
+<input type = "button" class="but" value="cough" id = "btn29" onClick="changecolor('btn29')">
+<input type = "button" class="but" value="skin_rash" id = "btn30" onClick="changecolor('btn30')">
+<input type = "button" class="but" value="nodal_skin_eruptions" id = "btn31" onClick="changecolor('btn31')">
+<input type = "button" class="but" value="red_sore_around_nose" id = "btn32" onClick="changecolor('btn32')">
+<input type = "button" class="but" value="watering_from_eyes" id = "btn33" onClick="changecolor('btn33')">
+<input type = "button" class="but" value="silver_like_dusting" id = "btn34" onClick="changecolor('btn34')">
+<input type = "button" class="but" value="small_dents_in_nails" id = "btn35" onClick="changecolor('btn35')">
+<input type = "button" class="but" value="inflammatory_nails" id = "btn36" onClick="changecolor('btn36')">
+<input type = "button" class="but" value="yellow_crust_ooze" id = "btn37" onClick="changecolor('btn37')">
+<input type = "button" class="but" value="prominent_veins_on_calf" id = "btn38" onClick="changecolor('btn38')">
+<input type = "button" class="but" value="palpitations" id = "btn39" onClick="changecolor('btn39')">
+<input type = "button" class="but" value="painful_walking" id = "btn40" onClick="changecolor('btn40')">
+<input type = "button" class="but" value="pus_filled_pimples" id = "btn41" onClick="changecolor('btn41')">
+<input type = "button" class="but" value="blackheads" id = "btn42" onClick="changecolor('btn42')">
+<input type = "button" class="but" value="scurring" id = "btn43" onClick="changecolor('btn43')">
+<input type = "button" class="but" value="skin_peeling" id = "btn44" onClick="changecolor('btn44')">
+<input type = "button" class="but" value="increased_appetite" id = "btn45" onClick="changecolor('btn45')">
+<input type = "button" class="but" value="polyuria" id = "btn46" onClick="changecolor('btn46')">
+<input type = "button" class="but" value="family_history" id = "btn47" onClick="changecolor('btn47')">
+<input type = "button" class="but" value="mucoid_sputum" id = "btn48" onClick="changecolor('btn48')">
+<input type = "button" class="but" value="rusty_sputum" id = "btn49" onClick="changecolor('btn49')">
+<input type = "button" class="but" value="lack_of_concentration" id = "btn50" onClick="changecolor('btn50')">
+<input type = "button" class="but" value="visual_disturbances" id = "btn51" onClick="changecolor('btn51')">
+<input type = "button" class="but" value="receiving_blood_transfusion" id = "btn52" onClick="changecolor('btn52')">
+<input type = "button" class="but" value="receiving_unsterile_injections" id = "btn53" onClick="changecolor('btn53')">
+<input type = "button" class="but" value="coma" id = "btn54" onClick="changecolor('btn54')">
+<input type = "button" class="but" value="stomach_bleeding" id = "btn55" onClick="changecolor('btn55')">
+<input type = "button" class="but" value="distention_of_abdomen" id = "btn56" onClick="changecolor('btn56')">
+<input type = "button" class="but" value="history_of_alcohol_consumption" id = "btn57" onClick="changecolor('btn57')">
+<input type = "button" class="but" value="blood_in_sputum" id = "btn58" onClick="changecolor('btn58')">
+<input type = "button" class="but" value="loss_of_smell" id = "btn59" onClick="changecolor('btn59')">
+<input type = "button" class="but" value="bladder_discomfort" id = "btn60" onClick="changecolor('btn60')">
+<input type = "button" class="but" value="foul_smell_of_urine" id = "btn61" onClick="changecolor('btn61')">
+<input type = "button" class="but" value="inflammatory_nails" id = "btn62" onClick="changecolor('btn62')">
+<input type = "button" class="but" value="continuous_feel_of_urine" id = "btn63" onClick="changecolor('btn63')">
+<input type = "button" class="but" value="passage_of_gases" id = "btn64" onClick="changecolor('btn64')">
+<input type = "button" class="but" value="internal_itching" id = "btn65" onClick="changecolor('btn65')">
+<input type = "button" class="but" value="toxic_look_(typhos)" id = "btn66" onClick="changecolor('btn66')">
+<input type = "button" class="but" value="depression" id = "btn67" onClick="changecolor('btn67')">
+<input type = "button" class="but" value="irritability" id = "btn68" onClick="changecolor('btn68')">
+<input type = "button" class="but" value="muscle_pain" id = "btn69" onClick="changecolor('btn69')">
+<input type = "button" class="but" value="altered_sensorium" id = "btn70" onClick="changecolor('btn70')">
+<input type = "button" class="but" value="red_spots_over_body" id = "btn71" onClick="changecolor('btn71')">
+<input type = "button" class="but" value="belly_pain" id = "btn72" onClick="changecolor('btn72')">
+<input type = "button" class="but" value="abnormal_menstruation" id = "btn73" onClick="changecolor('btn73')">
+<input type = "button" class="but" value="dischromic_patches" id = "btn74" onClick="changecolor('btn74')">
+<input type = "button" class="but" value="enlarged_thyroid" id = "btn75" onClick="changecolor('btn75')">
+<input type = "button" class="but" value="brittle_nails" id = "btn76" onClick="changecolor('btn76')">
+<input type = "button" class="but"value="swollen_extremeties" id = "btn77" onClick="changecolor('btn77')">
+<input type = "button" class="but"value="excessive_hunger" id = "btn78" onClick="changecolor('btn78')">
+<input type = "button" class="but"value="extra_marital_contacts" id = "btn79" onClick="changecolor('btn79')">
+<input type = "button" class="but"value="drying_and_tingling_lips" id = "btn80" onClick="changecolor('btn80')">
+<input type = "button" class="but"value="slurred_speech" id = "btn81" onClick="changecolor('btn81')">
+<input type = "button" class="but"value="knee_pain" id = "btn82" onClick="changecolor('btn82')">
+<input type = "button" class="but"value="hip_joint_pain" id = "btn83" onClick="changecolor('btn83')">
+<input type = "button" class="but"value="muscle_weakness" id = "btn84" onClick="changecolor('btn84')">
+<input type = "button" class="but"value="stiff_neck" id = "btn85" onClick="changecolor('btn85')">
+<input type = "button" class="but"value="swelling_joints" id = "btn86" onClick="changecolor('btn86')">
+<input type = "button" class="but"value="movement_stiffness" id = "btn87" onClick="changecolor('btn87')">
+<input type = "button" class="but"value="spinning_movements" id = "btn88" onClick="changecolor('btn88')">
+<input type = "button" class="but"value="loss_of_balance" id = "btn89" onClick="changecolor('btn89')">
+<input type = "button" class="but"value="unsteadiness" id = "btn90" onClick="changecolor('btn90')">
+<input type = "button" class="but"value="weakness_of_one_body_side" id = "btn91" onClick="changecolor('btn91')">
+<input type = "button" class="but"value="chest_pain" id = "btn92" onClick="changecolor('btn92')">
+<input type = "button" class="but"value="weakness_in_limbs" id = "btn93" onClick="changecolor('btn93')">
+<input type = "button" class="but"value="fast_heart_rate" id = "btn94" onClick="changecolor('btn94')">
+<input type = "button" class="but"value="pain_during_bowel_movements" id = "btn95" onClick="changecolor('btn95')">
+<input type = "button" class="but"value="pain_in_anal_region" id = "btn96" onClick="changecolor('btn96')">
+<input type = "button" class="but"value="bloody_stool" id = "btn97" onClick="changecolor('btn97')">
+<input type = "button" class="but"value="irritation_in_anus" id = "btn98" onClick="changecolor('btn98')">
+<input type = "button" class="but"value="neck_pain" id = "btn99" onClick="changecolor('btn99')">
+<input type = "button" class="but"value="dizziness" id = "btn100" onClick="changecolor('btn100')">
+<input type = "button" class="but"value="cramps" id = "btn101" onClick="changecolor('btn101')">
+<input type = "button" class="but"value="bruising" id = "btn102" onClick="changecolor('btn102')">
+<input type = "button" class="but"value="obesity" id = "btn103" onClick="changecolor('btn103')">
+<input type = "button" class="but"value="swollen_legs" id = "btn104" onClick="changecolor('btn104')">
+<input type = "button" class="but"value="swollen_blood_vessels" id = "btn105" onClick="changecolor('btn105')">
+<input type = "button" class="but"value="puffy_face_and_eyes" id = "btn106" onClick="changecolor('btn106')">
+<input type = "button" class="but"value="fluid_overload" id = "btn107" onClick="changecolor('btn107')">
+<input type = "button" class="but"value="swelling_of_stomach" id = "btn108" onClick="changecolor('btn108')">
+<input type = "button" class="but"value="swelled_lymph_nodes" id = "btn109" onClick="changecolor('btn109')">
+<input type = "button" class="but"value="malaise" id = "btn110" onClick="changecolor('btn110')">
+<input type = "button" class="but"value="blurred_and_distorted_vision" id = "btn111" onClick="changecolor('btn111')">
+<input type = "button" class="but"value="phlegm" id = "btn112" onClick="changecolor('btn112')">
+<input type = "button" class="but"value="throat_irritation" id = "btn113" onClick="changecolor('btn113')">
+<input type = "button" class="but"value="redness_of_eyes" id = "btn114" onClick="changecolor('btn114')">
+<input type = "button" class="but"value="sinus_pressure" id = "btn115" onClick="changecolor('btn115')">
+<input type = "button" class="but"value="runny_nose" id = "btn116" onClick="changecolor('btn116')">
+<input type = "button" class="but"value="burning_micturition" id = "btn117" onClick="changecolor('btn117')">
+<input type = "button" class="but"value="sunken_eyes" id = "btn118" onClick="changecolor('btn118')">
+<input type = "button" class="but"value="yellowish_skin" id = "btn119" onClick="changecolor('btn119')">
+<input type = "button" class="but"value="dark_urine" id = "btn120" onClick="changecolor('btn120')">
+<input type = "button" class="but"value="nausea" id = "btn121" onClick="changecolor('btn121')">
+<input type = "button" class="but"value="loss_of_appetite" id = "btn122" onClick="changecolor('btn122')">
+<input type = "button" class="but"value="pain_behind_the_eyes" id = "btn123" onClick="changecolor('btn123')">
+<input type = "button" class="but"value="back_pain" id = "btn124" onClick="changecolor('btn124')">
+<input type = "button" class="but"value="constipation" id = "btn125" onClick="changecolor('btn125')">
+<input type = "button" class="but"value="abdominal_pain" id = "btn126" onClick="changecolor('btn126')">
+<input type = "button" class="but"value="diarrhoea" id = "btn127" onClick="changecolor('btn127')">
+<input type = "button" class="but"value="mild_fever" id = "btn128" onClick="changecolor('btn128')">
+<input type = "button" class="but"value="yellow_urine" id = "btn129" onClick="changecolor('btn129')">
+<input type = "button" class="but"value="yellowing_of_eyes" id = "btn130" onClick="changecolor('btn130')">
+<input type = "button" class="but"value="acute_liver_failure" id = "btn131" onClick="changecolor('btn131')">
+<input type = "button" class="but"value="congestion" id = "btn132" onClick="changecolor('btn132')">
+</br><p>Selected Disease Are</p>
+<textarea name="main"  id="ref" value="" rows="4" cols="100"></textarea>
+<center><a href={{url_for('result')}}/ ></a><input class="button" type="submit" onClick="res1()" value="SUBMIT"><span></span></input></center>
+</form>
+</div>
+</body>
+</html>

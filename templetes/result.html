@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"></head>
+<style>
+.bg-gra-01 {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+}
+    </style>
+   <body style="background-color:pink;">
+       <div class="bg-gra-01">
+        <center><h2 class="dat">Hi,{{name[0]}}
+         According to our system we have predicted that you might have</h2>
+         <table border = 1>
+            <tr>
+                <th>Disease</th>
+                <th>Accuracy</th>
+            </tr> 
+            {% for key, value in des.items() %}
+            <tr>
+               <th id="th"> {{ value[0] }} </th>
+               <td> {{ value[1] }} </td>
+            </tr>
+         {% endfor %}
+        </table>
+        
+    </center>
+
+
+    <table border = 1>
+
+  <tr>
+    <th>{{name2[0][0][0]}}</th>
+    <th>{{name2[0][0][1]}}</th>
+    <th>{{name2[0][0][2]}}</th>
+    <th>{{name2[0][0][3]}}</th>
+    <th>{{name2[0][0][4]}}</th>
+  </tr>
+  <tr>
+  
+  {% for i in hii %}
+   <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td><a href={{i[4]}}>{{i[4]}}</a></td>
+    <tr>
+  {% endfor %}
+</table>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Disease Detection</title>
+
+    <!-- Icons font CSS-->
+    <link href="static/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="static/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <!-- Vendor CSS-->
+    <link href="static/select2.min.css" rel="stylesheet" media="all">
+    <link href="static/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Main CSS-->
+    <link href="static/main1.css" rel="stylesheet" media="all">
+</head>
+<script>
+function fn(){
+x= document.getElementById("gender").value;
+if(x!="Male" && x!="Female" && x!="Other"){
+alert("Check Gender");
+}
+}
+</script>
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+		<center><h2 >WELCOME</h1></center>
+            <div class="card card-3">
+                <div class="card-heading">
+                    <center><img  src="static/bg-heading-03.jpg" width="600" height="600" style="float:left"></center>
+                </div>
+            
+            <div class="card-body" style="float: right;">
+                    <h2 class="title">Person Info</h2>
+                    <form autocomplete="off" method="POST" action="http://localhost:5000/login" method="GET">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday" pattern="\d{1,2}/\d{1,2}/\d{4}" title="Enter the format dd/mm/yy"required>
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select  id="gender" name="gender" required>
+								    <option disabled="disabled" selected="selected">Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" onclick="fn()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter VALID MAil" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Phone" name="phone" pattern="[6-9]{1}[0-9]{9}" 
+                            title="Enter VALID Number" required>
+                        </div>
+                        <div class="p-t-10">
+                            <a href={{url_for('login')}}/ >
+                            <button class="btn btn--pill btn--green" type="submit" >Submit</button>
+                        </a> 
+                        </div>
+                    </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="static/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="static/select2.min.js"></script>
+    <script src="static/moment.min.js"></script>
+    <script src="static/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="static/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
