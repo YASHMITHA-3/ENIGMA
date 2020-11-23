@@ -4,12 +4,11 @@ TEAM NAME:ENIGMA
 This system "LIFE CARE" is implemented using machine learning it is implemented in the form of the website which is aimed at analysing the symptoms from the user and detecting the disease using ML algorithms such as Random forest ,Decision tree and Navie Bayes.
 Some specific questions are asked by the system to the user to further elaborate  the symptoms and so as to arrive at particular disease..Once after the disease is predicted the user can either choose consultation of the doctor for further Cure or home remedies for immediate Cure.
 
-To run the life care website you need to have the knowledge about flask and how to run the flask.
+To run the "life care" website you need to have the knowledge about flask and how to run the flask.
 And also about some basic web development tools like HTML, JS and CSS.
 
 Installations 
 1.Flask
-2.Display
 
 Pre-requisites
 1.Virtual environment.
@@ -19,5 +18,5 @@ Pre-requisites
 5.Sklearn
 6.Pylint
 7.Scipy
-8.ipython
+
 
