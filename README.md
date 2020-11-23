@@ -19,4 +19,9 @@ Pre-requisites
 6.Pylint
 7.Scipy
 
+Folder structure:
+1.static-conatins web application files.
+2.Templates- conatins HTML documents.
 
+How to run :
+To run "Life Care" run app.py using flask virtual environment in the terminal. Run on local host to get the html output. 
