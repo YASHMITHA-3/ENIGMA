@@ -1,4 +1,4 @@
-# enigma
+# Enigma
 TOPIC:Disease Detection and Cure
 
 TEAM NAME:ENIGMA
@@ -14,16 +14,24 @@ Installations
 
 Pre-requisites
 1.Virtual environment.
+
 2.Flask
+
 3.Numpy 
+
 4.Pandas
+
 5.Sklearn
+
 6.Pylint
+
 7.Scipy
 
 Folder structure:
 1.static-conatins web application files.
+
 2.Templates- conatins HTML documents.
+
 3.app.py- main file which copnatins machine learning code
 
 How to run :
