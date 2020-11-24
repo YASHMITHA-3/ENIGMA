@@ -28,7 +28,7 @@ Folder structure:-
 
 2.Templates- conatins HTML documents.
 
-3.app.py- main file which copnatins machine learning code.
+3.app.py- main file which conatins machine learning code.
 
 How to run :
 To run "Life Care" run app.py using flask virtual environment in the terminal. Run on local host to get the html output. 
