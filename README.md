@@ -10,22 +10,15 @@ To run the "life care" website you need to have the knowledge about flask and ho
 And also about some basic web development tools like HTML, JS and CSS.
 
 Installations 
-
 1.Flask
 
 Pre-requisites
 1.Virtual environment.
-
 2.Flask
-
 3.Numpy 
-
 4.Pandas
-
 5.Sklearn
-
 6.Pylint
-
 7.Scipy
 
 Folder structure:
