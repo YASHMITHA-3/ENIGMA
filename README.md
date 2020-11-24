@@ -10,6 +10,7 @@ To run the "life care" website you need to have the knowledge about flask and ho
 And also about some basic web development tools like HTML, JS and CSS.
 
 Installations 
+
 1.Flask
 
 Pre-requisites
@@ -28,6 +29,7 @@ Pre-requisites
 7.Scipy
 
 Folder structure:
+
 1.static-conatins web application files.
 
 2.Templates- conatins HTML documents.
