@@ -9,25 +9,26 @@ Some specific questions are asked by the system to the user to further elaborate
 To run the "life care" website you need to have the knowledge about flask and how to run the flask.
 And also about some basic web development tools like HTML, JS and CSS.
 
-Installations 
-1.Flask
+Installations:-
+1.Flask.
+2.Visual studio/atom.
 
-Pre-requisites
+Pre-requisites:-
 1.Virtual environment.
-2.Flask
-3.Numpy 
-4.Pandas
-5.Sklearn
-6.Pylint
-7.Scipy
+2.Flask.
+3.Numpy.
+4.Pandas.
+5.Sklearn.
+6.Pylint.
+7.Scipy.
 
-Folder structure:
+Folder structure:-
 
 1.static-conatins web application files.
 
 2.Templates- conatins HTML documents.
 
-3.app.py- main file which copnatins machine learning code
+3.app.py- main file which copnatins machine learning code.
 
 How to run :
 To run "Life Care" run app.py using flask virtual environment in the terminal. Run on local host to get the html output. 
