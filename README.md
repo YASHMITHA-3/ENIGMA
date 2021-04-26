@@ -1,5 +1,4 @@
-# Enigma
-TOPIC:Disease Detection and Cure
+# Disease Detection and Cure
 
 TEAM NAME:ENIGMA
 
